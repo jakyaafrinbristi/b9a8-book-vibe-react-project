@@ -3,7 +3,7 @@
 const PagesRead = () => {
     return (
         <div>
-           <p>sallalahu alahi waslam</p> 
+           <p>d</p> 
         </div>
     );
 };
