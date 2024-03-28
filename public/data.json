@@ -1,6 +1,6 @@
 [
     {
-      "bookId": 1,
+      "id": 1,
       "bookName": "1984",
       "author": "George Orwell",
       "image": "https://i.ibb.co/CWgQ6Jm/card-one.jpg",
@@ -13,7 +13,7 @@
       "yearOfPublishing": 1949
     },
     {
-      "bookId": 2,
+      "id": 2,
       "bookName": "To Kill a Mockingbird",
       "author": "Harper Lee",
       "image": "https://i.ibb.co/3hfdbWp/card-two.jpg",
@@ -26,7 +26,7 @@
       "yearOfPublishing": 1960
     },
     {
-      "bookId": 3,
+      "id": 3,
       "bookName": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
       "image": "https://i.ibb.co/PTs3RRN/card-three.jpg",
@@ -39,7 +39,7 @@
       "yearOfPublishing": 1925
     },
     {
-      "bookId": 4,
+      "id": 4,
       "bookName": "Sapiens: A Brief History of Humankind",
       "author": "Yuval Noah Harari",
       "image": "https://i.ibb.co/3yVwhbx/card-four.jpg",
@@ -52,7 +52,7 @@
       "yearOfPublishing": 2011
     },
     {
-      "bookId": 5,
+      "id": 5,
       "bookName": "The Catcher in the Rye",
       "author": "J.D. Salinger",
       "image": "https://i.ibb.co/7QR4bFm/card-five.jpg",
@@ -65,7 +65,7 @@
       "yearOfPublishing": 1951
     },
     {
-      "bookId": 6,
+      "id": 6,
       "bookName": "The Hobbit",
       "author": "J.R.R. Tolkien",
       "image": "https://i.ibb.co/L93fsxD/card-6.jpg",
