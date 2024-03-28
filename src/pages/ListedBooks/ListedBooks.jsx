@@ -1,12 +1,16 @@
 import { useState } from "react";
 import useLocalStorage from "../../Hooks/useLocalStorage";
 import ReadBooks from "../../components/ReadBooks/ReadBooks";
+import useWishStorage from "../../Hooks/useWishStorage";
+import WishListBooks from "../../components/WishListBooks/WishListBooks";
 
 
 
 const ListedBooks = () => {
   const { localData } = useLocalStorage();
-  console.log(localData)
+  // console.log(localData)
+  const { wishLocalData } =useWishStorage();
+  console.log(wishLocalData)
   const [tabIndex, setTabIndex] = useState(0)
   return (
     <div>
@@ -35,7 +39,10 @@ const ListedBooks = () => {
       <>{
         localData.map((data) => <ReadBooks key={data.id} data={data}></ReadBooks>)
       }</>:
-      <>wishlist</>
+      <>{
+        wishLocalData.map((data) =><WishListBooks key={data.id}data={data}></WishListBooks>)
+      }
+      </>
 
      }
       
