@@ -3,7 +3,7 @@ import useLocalStorage from "../../Hooks/useLocalStorage";
 import ReadBooks from "../../components/ReadBooks/ReadBooks";
 import useWishStorage from "../../Hooks/useWishStorage";
 import WishListBooks from "../../components/WishListBooks/WishListBooks";
-
+import { IoIosArrowDown } from "react-icons/io";
 
 
 const ListedBooks = () => {
@@ -17,7 +17,19 @@ const ListedBooks = () => {
       <div className="bg-gray-200 pt-5 pb-5 container mx-auto">
         <h1 className="text-center text-4xl font-bold">Books</h1>
       </div>
-      <div className="flex  ml-7 overflow-x-auto overflow-y-hidden flex-nowrap dark:bg-gray-100 dark:text-gray-800 mt-12">
+      <div className="text-center">
+      <details className="dropdown">
+  <summary className="px-5 mt-2 btn text-white bg-green-600 text-2xl">Sort by <IoIosArrowDown /></summary>
+  <ul className=" shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+    <li><a>Rating</a></li>
+    <hr />
+    <li><a>Number Of Pages</a></li>
+    <hr />
+    <li><a>Publish year</a></li>
+  </ul>
+</details>
+      </div>
+      <div className="flex  ml-7 overflow-x-auto overflow-y-hidden flex-nowrap dark:bg-gray-100 dark:text-gray-800 mt-24">
         <a
           onClick={() => setTabIndex(0)}
           className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2  ${tabIndex === 0 ? 'border border-b-0' : 'border-b'} dark:border-gray-600 dark:text-gray-600`}>
