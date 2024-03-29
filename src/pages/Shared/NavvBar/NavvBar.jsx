@@ -18,7 +18,14 @@ const navList = (
       >
      
  
-        <NavLink to={"/"} className="flex items-center">
+        <NavLink to={"/"} 
+         className={({ isActive }) =>
+         isActive
+           ? "text-green-500 font-bold underline"
+        
+           : "flex items-center"
+       }>
+       
           Home
         </NavLink>
       </Typography>
@@ -29,7 +36,12 @@ const navList = (
         className="flex items-center gap-x-2 p-1 font-medium"
       >
         
-        <NavLink to={"/listed"} className="flex items-center">
+        <NavLink to={"/listed"}  className={({ isActive }) =>
+         isActive
+           ? "text-green-500 font-bold underline"
+        
+           : "flex items-center"
+       }>
          Listed Books
         </NavLink>
       </Typography>
@@ -40,7 +52,12 @@ const navList = (
         className="flex items-center gap-x-2 p-1 font-medium"
       >
        
-        <NavLink to="/read" className="flex items-center">
+        <NavLink to="/read"  className={({ isActive }) =>
+         isActive
+           ? "text-green-500 font-bold underline"
+        
+           : "flex items-center"
+       }>
           Pages To Read
         </NavLink>
       </Typography>

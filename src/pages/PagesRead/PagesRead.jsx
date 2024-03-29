@@ -1,11 +1,11 @@
 
 
 const PagesRead = () => {
-    return (
-        <div>
-           <p>d</p> 
-        </div>
-    );
+  return (
+    <div>
+      <h1>nn</h1>
+    </div>
+  );
 };
 
 export default PagesRead;
